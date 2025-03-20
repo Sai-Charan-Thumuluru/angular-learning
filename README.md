@@ -1,1 +1,1 @@
-Angular UI/UX design and development
+Design and Development of Web applications with new Angular UI/UX 
