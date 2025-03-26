@@ -1,40 +1,60 @@
 <main class="main">
   <div class="header-flexbox">
-      <h1>Welcome to our {{ title }}</h1>
-      <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 900 900" class="solar-logo">
-        <rect width="100%" height="100%" fill="black" />
+    <h1>Welcome to our {{ title }}</h1>
+    <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 540 540" class="solar-logo">
+      <rect width="100%" height="100%" fill="black" />
 
-        <!-- Sun -->
-        <circle cx="250" cy="250" r="240" fill="darkorange" />
+      <!-- Sun -->
+      <circle cx="250" cy="250" r="240" fill="darkorange">
+        <title>Sun</title>
+      </circle>
 
-        <!-- Planets -->
-        <!-- Mercury (gray) -->
-        <circle cx="170" cy="250" r="9" fill="black" />
+      <!-- Planets -->
+      <!-- Mercury (gray) -->
+      <circle cx="170" cy="250" r="9" fill="black">
+        <title>Mercury</title>
+      </circle>
 
-        <!-- Venus (yellowish) -->
-        <circle cx="210" cy="250" r="12" fill="black" />
+      <!-- Venus (yellowish) -->
+      <circle cx="210" cy="250" r="12" fill="black">
+        <title>Venus</title>
+      </circle>
 
-        <!-- Earth (blue and green) -->
-        <circle cx="250" cy="250" r="15" fill="black" />
+      <!-- Earth (blue and green) -->
+      <circle cx="250" cy="250" r="15" fill="black">
+        <title>Earth</title>
+      </circle>
 
-        <!-- Mars (red) -->
-        <circle cx="290" cy="250" r="12" fill="black" />
+      <!-- Mars (red) -->
+      <circle cx="290" cy="250" r="12" fill="black">
+        <title>Mars</title>
+      </circle>
 
-        <!-- Jupiter (brown with stripes) -->
-        <circle cx="350" cy="250" r="24" fill="black" />
+      <!-- Jupiter (brown with stripes) -->
+      <circle cx="350" cy="250" r="24" fill="black">
+        <title>Jupiter</title>
+      </circle>
 
-        <!-- Saturn (yellow with rings) -->
-        <circle cx="400" cy="250" r="21" fill="black" />
+      <!-- Saturn (yellow with rings) -->
+      <circle cx="400" cy="250" r="21" fill="black">
+        <title>Saturn</title>
+      </circle>
 
-        <!-- Uranus (light blue) -->
-        <circle cx="450" cy="250" r="18" fill="black" />
+      <!-- Uranus (light blue) -->
+      <circle cx="450" cy="250" r="18" fill="black">
+        <title>Uranus</title>
+      </circle>
 
-        <!-- Neptune (dark blue) -->
-        <circle cx="480" cy="250" r="12" fill="black" />
+      <!-- Neptune (dark blue) -->
+      <circle cx="480" cy="250" r="12" fill="black">
+        <title>Neptune</title>
+      </circle>
 
-        <!-- Pluto (light gray) -->
-        <circle cx="510" cy="250" r="9" fill="#654321" />
-      </svg>
+      <!-- Pluto (light gray) -->
+      <circle cx="510" cy="250" r="5.4" fill="#66574e">
+        <title>Pluto</title>
+      </circle>
+    </svg>
   </div>
 </main>
 <router-outlet />
