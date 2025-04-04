@@ -2,7 +2,7 @@
       <rect width="100%" height="100%" fill="black" />
 
       <!-- Sun -->
-      <circle cx="250" cy="250" r="240" fill="darkorange" class="solar-object">
+      <circle cx="250" cy="250" r="240" fill="white" class="solar-object">
         <title>Sun</title>
       </circle>
 

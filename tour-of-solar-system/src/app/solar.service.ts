@@ -1,18 +1,10 @@
-import { Component, inject } from '@angular/core';
-import { SolarService } from '../solar.service';
-import { SolarObject } from '../solar-object';
-import { SolarObjectsComponent } from '../solar-objects/solar-objects.component';
-import { CommonModule } from '@angular/common';
+import { Injectable } from '@angular/core';
 
-@Component({
-  selector: 'app-space',
-  imports: [SolarObjectsComponent, CommonModule],
-  templateUrl: './space.component.html',
-  styleUrl: './space.component.css'
+@Injectable({
+  providedIn: 'root'
 })
-export class SpaceComponent {
-  title = 'Solar System';
-  solarObjectList: SolarObject[] = [
+export class SolarService {
+  protected solarObjectList = [
     {
       "id": 0,
       "image": "./assets/sun.jpg",
@@ -95,7 +87,9 @@ export class SpaceComponent {
     }
   ];
 
-  ngOnInit() {
-    console.log(this.solarObjectList);
+  constructor() { }
+
+  getAllSolarObjects() {
+    return this.solarObjectList;
   }
 }
