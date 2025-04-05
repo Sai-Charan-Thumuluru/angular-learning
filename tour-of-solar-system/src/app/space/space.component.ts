@@ -11,7 +11,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './space.component.css'
 })
 export class SpaceComponent {
-  title = 'Solar System';
+  title = 'Solar System from Space';
   solarObjectList: SolarObject[] = [
     {
       "id": 0,
