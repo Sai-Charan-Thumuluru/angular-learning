@@ -1,10 +1,11 @@
 import { Injectable } from '@angular/core';
+import { SolarObject } from './solar-object';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SolarService {
-  protected solarObjectList = [
+  protected solarObjectList: SolarObject[] = [
     {
       "id": 0,
       "image": "./assets/sun.jpg",
@@ -89,7 +90,11 @@ export class SolarService {
 
   constructor() { }
 
-  getAllSolarObjects() {
+  getAllSolarObjects(): SolarObject[] {
     return this.solarObjectList;
+  }
+
+  getSolarObjectById(id: Number): SolarObject | undefined {
+    return this.solarObjectList.find(solarObject => solarObject.id === id);
   }
 }

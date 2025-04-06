@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { SolarService } from '../solar.service';
+import { SolarObject } from '../solar-object';
 
 @Component({
   selector: 'app-solar-object-details',
@@ -7,5 +10,12 @@ import { Component } from '@angular/core';
   styleUrl: './solar-object-details.component.css'
 })
 export class SolarObjectDetailsComponent {
+  activatedRoute: ActivatedRoute = inject(ActivatedRoute);
+  solarService = inject(SolarService);
+  solarObject: SolarObject | undefined;
 
+  constructor() {
+    const solarObjectId = Number(this.activatedRoute.snapshot.params['id']);
+    this.solarObject = this.solarService.getSolarObjectById(solarObjectId);
+  }
 }

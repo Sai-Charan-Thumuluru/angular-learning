@@ -1,1 +1,12 @@
-<p class="test">solar-object-details works!</p>
+<section class="solar-object-box">
+  <img class=" solar-image" [src]="solarObject?.image" alt="Image from space of {{ solarObject?.name }}">
+  <p class="solar-object-details">
+    Name:  {{ solarObject?.name }}
+    <br>
+    Age:  {{ solarObject?.age }}
+    <br>
+    Appearance:  {{ solarObject?.color }}
+    <br>
+    Size:  {{ solarObject?.size }}
+  </p>
+</section>

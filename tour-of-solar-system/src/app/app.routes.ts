@@ -16,7 +16,7 @@ export const routes: Routes = [
     title: 'Solar System from Space'
   },
   {
-    path: 'details',
+    path: 'details/:id',
     component: SolarObjectDetailsComponent,
     title: 'Solar Object Details'
   }
