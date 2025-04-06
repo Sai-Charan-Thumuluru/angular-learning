@@ -25,10 +25,8 @@ h2 {
 }
 
 .solar-grid {
-  display: grid;
-  column-gap: 14px;
-  row-gap: 14px;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-flow: column nowrap;
   justify-content: space-around;
   align-items: center;
 }
