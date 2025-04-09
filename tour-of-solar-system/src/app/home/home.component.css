@@ -24,6 +24,10 @@ h1 {
   margin: 0;
 }
 
+.launch {
+  align-self: flex-end;
+}
+
 .header-flexbox {
   display: flex;
   flex-direction: column;
