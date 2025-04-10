@@ -1,0 +1,32 @@
+h1 {
+  font-size: 3rem;
+  color: lightcyan;
+  font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.125rem;
+  text-align: center;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: lightcyan;
+  font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  font-weight: 250;
+  line-height: 1.2;
+  letter-spacing: -0.125rem;
+  text-align: center;
+  margin: 0;
+}
+
+.solar-grid {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+}

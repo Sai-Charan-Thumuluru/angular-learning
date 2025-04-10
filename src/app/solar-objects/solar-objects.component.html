@@ -1,0 +1,5 @@
+<section class="solar-objects">
+  <img [routerLink]="['/details', solarObject.id]" class="solar-image" [src]="solarObject.image"
+    alt="Image from space of {{ solarObject.name }}">
+  <h2>{{ solarObject.name }}</h2>
+</section>
