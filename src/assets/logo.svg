@@ -6,6 +6,8 @@
         <title>Sun</title>
       </circle>
 
+      <ellipse cx="0" cy="250" rx="511" ry="1" fill="cyan" />
+
       <!-- Planets -->
       <!-- Mercury (gray) -->
       <circle cx="170" cy="250" r="9" fill="black" class="solar-object">

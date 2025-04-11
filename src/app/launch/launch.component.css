@@ -6,3 +6,7 @@
     "Segoe UI Symbol" !important;
   font-weight: 500 !important;
 }
+
+.start:hover {
+  background-color: cyan !important;
+}
