@@ -1,10 +1,15 @@
+.home {
+  display: flex;
+  flex-direction: column;
+}
+
 h1 {
   font-size: 3rem;
   color: lightcyan;
   font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
-  font-weight: 500;
+  font-weight: 450;
   line-height: 1.2;
   letter-spacing: -0.125rem;
   text-align: center;
@@ -38,8 +43,7 @@ h1 {
 }
 
 .solar-logo {
-  width: 100%;
-  max-width: 500px;
+  width: 34%;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -54,7 +58,7 @@ main {
   padding-top: 1rem;
   box-sizing: border-box;
   margin-top: 0;
-  padding: 3rem;
+  padding: 1.5rem;
 }
 
 @media (max-width: 768px) {
@@ -67,9 +71,9 @@ main {
     font-size: 2rem;
   }
 
-  .solar-logo {
+  /* .solar-logo {
     max-width: 80%;
-  }
+  } */
 }
 
 @media (max-width: 480px) {
@@ -82,7 +86,7 @@ main {
     font-size: 1.8rem;
   }
 
-  .solar-logo {
+  /* .solar-logo {
     max-width: 90%;
-  }
+  } */
 }
