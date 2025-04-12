@@ -4,5 +4,6 @@ export interface SolarObject {
   name: string,
   color: string,
   age: string,
-  size: string
+  size: string,
+  audioDuration: string
 }

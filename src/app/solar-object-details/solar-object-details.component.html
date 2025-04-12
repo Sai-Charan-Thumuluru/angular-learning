@@ -1,5 +1,6 @@
 <section class="solar-object-box">
-  <img class=" solar-image" [src]="solarObject?.image" alt="Image from space of {{ solarObject?.name }}">
+  <img class=" solar-image" [src]="solarObject?.image" alt="Image from space of {{ solarObject?.name }}"
+    (click)="playOrPauseObjectsAudio()">
   <p class="solar-object-details">
     Name: <i>{{ solarObject?.name }}</i>
     <br>
@@ -8,5 +9,8 @@
     Appearance: <i>{{ solarObject?.color }}</i>
     <br>
     Size: <i>{{ solarObject?.size }}</i>
+    <br>
+    <br>
+    <i class="message">"Click on object to play/pause it's sound from space" {{solarObjectAudio.currentTime}}</i>
   </p>
 </section>

@@ -12,7 +12,8 @@ export class SolarService {
       "name": "Sun",
       "color": "White from space",
       "age": "4.6 billion years",
-      "size": "1.4 million km in diameter"
+      "size": "1.4 million km in diameter",
+      "audioDuration": "9,12"
     },
     {
       "id": 1,
@@ -20,7 +21,8 @@ export class SolarService {
       "name": "Mercury",
       "color": "Gray, rocky surface",
       "age": "4.6 billion years",
-      "size": "4,880 km in diameter"
+      "size": "4,880 km in diameter",
+      "audioDuration": "39,63"
     },
     {
       "id": 2,
@@ -28,7 +30,8 @@ export class SolarService {
       "name": "Venus",
       "color": "Yellowish, thick clouds",
       "age": "4.6 billion years",
-      "size": "12,104 km in diameter"
+      "size": "12,104 km in diameter",
+      "audioDuration": "72,99"
     },
     {
       "id": 3,
@@ -36,7 +39,8 @@ export class SolarService {
       "name": "Earth",
       "color": "Blue and white (oceans and clouds)",
       "age": "4.5 billion years",
-      "size": "12,742 km in diameter"
+      "size": "12,742 km in diameter",
+      "audioDuration": "99,126"
     },
     {
       "id": 4,
@@ -44,7 +48,8 @@ export class SolarService {
       "name": "Mars",
       "color": "Red, rusty surface",
       "age": "4.6 billion years",
-      "size": "6,779 km in diameter"
+      "size": "6,779 km in diameter",
+      "audioDuration": "126,160"
     },
     {
       "id": 5,
@@ -52,7 +57,8 @@ export class SolarService {
       "name": "Jupiter",
       "color": "Band of white, red, and brown clouds",
       "age": "4.6 billion years",
-      "size": "139,820 km in diameter"
+      "size": "139,820 km in diameter",
+      "audioDuration": "160,189"
     },
     {
       "id": 6,
@@ -60,7 +66,8 @@ export class SolarService {
       "name": "Saturn",
       "color": "Pale yellow with gold rings",
       "age": "4.6 billion years",
-      "size": "116,460 km in diameter"
+      "size": "116,460 km in diameter",
+      "audioDuration": "189,219"
     },
     {
       "id": 7,
@@ -68,7 +75,8 @@ export class SolarService {
       "name": "Uranus",
       "color": "Pale blue (methane atmosphere)",
       "age": "4.6 billion years",
-      "size": "50,724 km in diameter"
+      "size": "50,724 km in diameter",
+      "audioDuration": "219,248"
     },
     {
       "id": 8,
@@ -76,7 +84,8 @@ export class SolarService {
       "name": "Neptune",
       "color": "Deep blue (methane atmosphere)",
       "age": "4.6 billion years",
-      "size": "49,244 km in diameter"
+      "size": "49,244 km in diameter",
+      "audioDuration": "250,279"
     },
     {
       "id": 9,
@@ -84,7 +93,8 @@ export class SolarService {
       "name": "Pluto",
       "color": "Light brown with white spots",
       "age": "4.6 billion years",
-      "size": "2,377 km in diameter"
+      "size": "2,377 km in diameter",
+      "audioDuration": "279,300"
     }
   ];
 
