@@ -5,5 +5,6 @@ export interface SolarObject {
   color: string,
   age: string,
   size: string,
-  audioDuration: string
+  audioByteStartTime: number | undefined,
+  audioByteEndTime: number | undefined
 }

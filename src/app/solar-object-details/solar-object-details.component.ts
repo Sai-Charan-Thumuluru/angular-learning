@@ -19,23 +19,28 @@ export class SolarObjectDetailsComponent {
   constructor() {
     const solarObjectId = Number(this.activatedRoute.snapshot.params['id']);
     this.solarObject = this.solarService.getSolarObjectById(solarObjectId);
-    this.solarObjectAudio = new Audio(`${this.audioUrl}#t=${this.solarObject?.audioDuration}`);
+    this.solarObjectAudio = new Audio(`${this.audioUrl}#t=${this.solarObject?.audioByteStartTime},${this.solarObject?.audioByteEndTime}`);
   }
 
   playOrPauseObjectsAudio() {
     if (this.solarObjectAudio.paused) {
-      this.solarObjectAudio.loop = true;
       this.solarObjectAudio.play();
-      console.log(this.solarObjectAudio.currentTime);
     }
     else {
       this.solarObjectAudio.pause();
-      console.log(this.solarObjectAudio.currentTime);
+    }
+  }
+
+  private loopAudioByte = () => {
+    if (this.solarObjectAudio.currentTime >= this.solarObject?.audioByteEndTime!) {
+      this.solarObjectAudio.currentTime = Number(this.solarObject?.audioByteStartTime);
+      this.solarObjectAudio.play();
     }
   }
 
   ngOnInit() {
     if (this.solarObject) {
+      this.solarObjectAudio.addEventListener('timeupdate', this.loopAudioByte);
       this.playOrPauseObjectsAudio();
     }
   }
@@ -43,5 +48,6 @@ export class SolarObjectDetailsComponent {
   ngOnDestroy() {
     this.solarObjectAudio.pause();
     this.solarObjectAudio.currentTime = 0;
+    this.solarObjectAudio.removeEventListener('ontimeupdate', this.loopAudioByte);
   }
 }

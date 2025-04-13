@@ -13,7 +13,8 @@ export class SolarService {
       "color": "White from space",
       "age": "4.6 billion years",
       "size": "1.4 million km in diameter",
-      "audioDuration": "9,12"
+      "audioByteStartTime": 9,
+      "audioByteEndTime": 36
     },
     {
       "id": 1,
@@ -22,7 +23,8 @@ export class SolarService {
       "color": "Gray, rocky surface",
       "age": "4.6 billion years",
       "size": "4,880 km in diameter",
-      "audioDuration": "39,63"
+      "audioByteStartTime": 39,
+      "audioByteEndTime": 63
     },
     {
       "id": 2,
@@ -31,7 +33,8 @@ export class SolarService {
       "color": "Yellowish, thick clouds",
       "age": "4.6 billion years",
       "size": "12,104 km in diameter",
-      "audioDuration": "72,99"
+      "audioByteStartTime": 72,
+      "audioByteEndTime": 99
     },
     {
       "id": 3,
@@ -40,7 +43,8 @@ export class SolarService {
       "color": "Blue and white (oceans and clouds)",
       "age": "4.5 billion years",
       "size": "12,742 km in diameter",
-      "audioDuration": "99,126"
+      "audioByteStartTime": 99,
+      "audioByteEndTime": 126
     },
     {
       "id": 4,
@@ -49,7 +53,8 @@ export class SolarService {
       "color": "Red, rusty surface",
       "age": "4.6 billion years",
       "size": "6,779 km in diameter",
-      "audioDuration": "126,160"
+      "audioByteStartTime": 126,
+      "audioByteEndTime": 160
     },
     {
       "id": 5,
@@ -58,7 +63,8 @@ export class SolarService {
       "color": "Band of white, red, and brown clouds",
       "age": "4.6 billion years",
       "size": "139,820 km in diameter",
-      "audioDuration": "160,189"
+      "audioByteStartTime": 160,
+      "audioByteEndTime": 189
     },
     {
       "id": 6,
@@ -67,7 +73,8 @@ export class SolarService {
       "color": "Pale yellow with gold rings",
       "age": "4.6 billion years",
       "size": "116,460 km in diameter",
-      "audioDuration": "189,219"
+      "audioByteStartTime": 189,
+      "audioByteEndTime": 219
     },
     {
       "id": 7,
@@ -76,7 +83,8 @@ export class SolarService {
       "color": "Pale blue (methane atmosphere)",
       "age": "4.6 billion years",
       "size": "50,724 km in diameter",
-      "audioDuration": "219,248"
+      "audioByteStartTime": 219,
+      "audioByteEndTime": 248
     },
     {
       "id": 8,
@@ -85,7 +93,8 @@ export class SolarService {
       "color": "Deep blue (methane atmosphere)",
       "age": "4.6 billion years",
       "size": "49,244 km in diameter",
-      "audioDuration": "250,279"
+      "audioByteStartTime": 250,
+      "audioByteEndTime": 279
     },
     {
       "id": 9,
@@ -94,7 +103,8 @@ export class SolarService {
       "color": "Light brown with white spots",
       "age": "4.6 billion years",
       "size": "2,377 km in diameter",
-      "audioDuration": "279,300"
+      "audioByteStartTime": 279,
+      "audioByteEndTime": 300
     }
   ];
 
