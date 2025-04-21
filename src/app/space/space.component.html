@@ -1,4 +1,9 @@
 <h1>List of Solar Objects</h1>
 <section class="solar-grid">
+  <div class="search-box">
+    <input pInputText class="search-text-box" placeholder="Type your text" type="text" spellcheck="false"
+      [(ngModel)]="text" (keyup.enter)="filterSolarObjects()" />
+    <button pButton class="search-button" label="Search" (click)="filterSolarObjects()"></button>
+  </div>
   <app-solar-objects *ngFor="let solarObject of solarObjectList" [solarObject]="solarObject"></app-solar-objects>
 </section>

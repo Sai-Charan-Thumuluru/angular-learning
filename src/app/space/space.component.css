@@ -8,7 +8,7 @@ h1 {
   line-height: 1.2;
   letter-spacing: -0.125rem;
   text-align: center;
-  margin: 0;
+  margin-top: 1rem;
 }
 
 h2 {
@@ -29,4 +29,50 @@ h2 {
   flex-flow: column nowrap;
   justify-content: space-around;
   align-items: center;
+}
+
+.search-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 0.125rem;
+  margin-top: 5rem;
+}
+
+.search-text-box {
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  font-weight: 500;
+}
+
+.search-text-box:focus {
+  border: 1px solid var(--p-cyan-400);
+}
+
+.search-text-box::placeholder {
+  color: white;
+  font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  font-style: italic;
+  font-weight: 250;
+}
+
+.search-button {
+  width: 30%;
+  height: 100%;
+  color: black;
+  background-color: var(--p-cyan-50);
+  font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  font-weight: 500;
+}
+
+.search-button:hover {
+  background-color: var(--p-cyan-400);
 }

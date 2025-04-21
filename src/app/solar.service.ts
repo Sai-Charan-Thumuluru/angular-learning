@@ -110,7 +110,14 @@ export class SolarService {
 
   constructor() { }
 
-  getAllSolarObjects(): SolarObject[] {
+  getAllSolarObjects(filterText?: string): SolarObject[] {
+    if (filterText) {
+      const filteredSolarObjectList = this.solarObjectList.filter((solarObject) => {
+        let solarObjectDetails = String(Object.values(solarObject)).toLowerCase();
+        return solarObjectDetails.includes(filterText.toLowerCase());
+      });
+      return filteredSolarObjectList;
+    }
     return this.solarObjectList;
   }
 
